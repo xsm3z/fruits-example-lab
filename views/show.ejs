@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= fruit.name %></title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <h1><%= fruit.name %></h1>
+  <p>Price: <%= fruit.price %></p>
+  <p>Organic: <%= fruit.isOrganic ? 'Yes' : 'No' %></p>
+  <p>Fresh: <%= fruit.isFresh ? 'Yes' : 'No' %></p>
+  <form action="/fruits/<%= fruit._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete</button>
+  </form>
+  <a href="/fruits">Back to Fruits List</a>
+</body>
+</html>

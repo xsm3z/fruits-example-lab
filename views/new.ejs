@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Fruit</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <h1>Add New Fruit</h1>
+  <form action="/fruits" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" required>
+    
+    <label for="isOrganic">Organic:</label>
+    <input type="checkbox" id="isOrganic" name="isOrganic">
+    
+    <label for="isFresh">Fresh:</label>
+    <input type="checkbox" id="isFresh" name="isFresh">
+    
+    <button type="submit">Add Fruit</button>
+  </form>
+  <a href="/fruits">Back to Fruits List</a>
+</body>
+</html>
